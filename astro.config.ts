@@ -34,6 +34,7 @@ const config = defineConfig({
     mdx(),
     sitemap(),
     spectre({
+      themeColor: '#3fb950',
       name: 'Elaman Imashov',
       openGraph: {
         home: {
