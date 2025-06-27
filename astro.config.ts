@@ -3,8 +3,10 @@ import { defineConfig } from 'astro/config';
 
 import expressiveCode from 'astro-expressive-code';
 import mdx from '@astrojs/mdx';
+import cloudflare from '@astrojs/cloudflare';
 import sitemap from '@astrojs/sitemap';
 import spectre from './package/src';
+
 
 import node from '@astrojs/node';
 import { spectreDark } from './src/ec-theme';
@@ -23,7 +25,7 @@ const {
 
 // https://astro.build/config
 const config = defineConfig({
-  site: 'https://spectre.louisescher.dev',
+  site: 'https://elaman.dev',
   output: 'static',
   integrations: [
     expressiveCode({
@@ -59,9 +61,7 @@ const config = defineConfig({
       }
     })
   ],
-  adapter: node({
-    mode: 'standalone'
-  })
+  adapter: cloudflare()
 });
 
 export default config;
