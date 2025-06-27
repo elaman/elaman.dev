@@ -34,11 +34,11 @@ const config = defineConfig({
     mdx(),
     sitemap(),
     spectre({
-      name: 'Elaman',
+      name: 'Elaman Imashov',
       openGraph: {
         home: {
-          title: 'Spectre',
-          description: 'A minimalistic theme for Astro.'
+          title: 'Elaman Imashov',
+          description: 'SoftwareWeb developer, front-end instructor, and open-source contributor. I use Drupal CMS and React JavaScript library to make awesome apps and websites.'
         },
         blog: {
           title: 'Blog',
